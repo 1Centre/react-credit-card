@@ -3,6 +3,8 @@
   var Payment, React, exp, images, validate;
 
   React = require('react');
+  
+  createReactClass = require('create-react-class');
 
   Payment = require('payment');
 
@@ -10,7 +12,7 @@
 
   validate = Payment.fns;
 
-  module.exports = React.createClass({
+  module.exports = createClass({
     displayName: 'Card',
     getDefaultProps: function() {
       return {
